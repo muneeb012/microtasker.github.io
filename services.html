@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroTasker</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/service.css">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/97e9dcf34a.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112568905060703");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="index.js"></script>
+
+    <div class="main2">
+        <div class="servicetitle">
+            <h1>Chose Service You Need</h1>
+        </div>
+        <div class="servicelist">
+            <ul>
+                <!-- web -->
+                <li>
+                    <div class="s1">
+                        <div class="s1img">
+                            <img src="service vector/web.jpg" alt="">
+                        </div>
+                        <div class="s1text">
+                            <h2>Web Devolpment</h2>
+                            <p>We Provide you awsome web design services bug fix landing pages and much more.</p>
+                        </div>
+                        <br>
+                        <div class="sbutton">
+                            <a href="Forms/webform.html"><button>Select</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!-- video -->
+                <li>
+                    <div class="s1">
+                        <div class="s1img">
+                            <img id="webimg" src="service vector/vid.jpg" alt="">
+                        </div>
+                        <div class="s1text">
+                            <h2>Video Editing</h2>
+                            <p>We Provide you awsome video editing services Cashcow videos short form and long videos
+                                for youtube wedding videos and much more.</p>
+                        </div>
+                        <br>
+                        <div class="sbutton">
+                        <a href="Forms/videoform.html"><button>Select</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!-- graphic -->
+                <li>
+                    <div class="s1">
+                        <div class="s1img">
+                            <img src="service vector/graphic.svg" alt="">
+                        </div>
+                        <div class="s1text">
+                            <h2>Graphic Design</h2>
+                            <p>We Provide you awsome graphic design services social media posts bussiness card
+                                thumbnails and much more.</p>
+                        </div>
+                        <br>
+                        <div class="sbutton">
+                            <a href="Forms/graphicform.html"><button>Select</button></a>
+                        </div>
+                    </div>
+                    <!-- photo ediitng -->
+                </li>
+                <li>
+                    <div class="s1">
+                        <div class="s1img">
+                            <img src="service vector/photo editing.jpg" alt="">
+                        </div>
+                        <div class="s1text">
+                            <h2>Photo Editing</h2>
+                            <p>We Provide you awsome photo Editing Services backfound removal restore old photos and
+                                much more.</p>
+                        </div>
+                        <br>
+                        <div class="sbutton">
+                            <a href="Forms/photoform.html"><button>Select</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="s1">
+                        <div class="s1img">
+                            <img src="service vector/white.jpg" alt="">
+                        </div>
+                        <div class="s1text">
+                            <h2>White Board Animation</h2>
+                            <p>Get you own whiteboard animation for you bussiness marketing and other purpose.</p>
+                        </div>
+                        <br>
+                        <div class="sbutton">
+                            <a href="Forms/whiteboardform.html"><button>Select</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="s1">
+                        <div class="s1img">
+                            <img src="service vector/all.jpg" alt="">
+                        </div>
+                        <div class="s1text">
+                            <h2>Full Bussiness Solution</h2>
+                            <p>Get all above services at reasonable cost.
+                                for a particullar project.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="sbutton">
+                            <a href=""><button>Contact</button></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a id="backs" href="index.html">
+<div class="back">
+    <i class="fa-solid fa-arrow-left"></i>
+</div>
+    </a>
+</body>
+
+</html>

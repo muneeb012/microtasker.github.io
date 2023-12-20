@@ -1,0 +1,222 @@
+#ahead{
+    background-image: url(../about/about2.jpg);
+    background-size: cover;
+    height: 700px;
+}
+#ahead p{
+    padding: 10px;
+}
+.ctext2{
+color: white;
+    width: 650px;
+}
+
+.ctext2 p{
+    font-family: 'Lato', sans-serif; 
+}
+.story{
+    text-align: center;
+    width: 100%;
+}
+.story h2{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Lato', sans-serif; 
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+.story{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+.stext{
+    width: 600px;
+    padding: 20px;
+}
+.mission{
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#DBDBDB;
+}
+.mtext{
+    /* background-color: aqua; */
+    width: 600px;
+    padding: 20px;
+}
+.mvideo{
+width: 600px;
+height: 400px;
+background-image: url(../about/vid\ 1.jpg);
+background-size: contain;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.mvideo p{
+color: rgb(0, 0, 0);
+font-size: 80px;
+}
+.way{
+    /* background-color: aqua; */
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    text-align: center;
+}
+.waytext{
+    text-align: center;
+  
+}
+.w1{
+    /* background-color: red; */
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+.w1 h4{
+    font-size: 80px;
+    text-align: center;
+
+}
+.waylist ul li{
+display: inline-block;
+margin: 20px;
+}
+.waylist{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.w1 h3{
+    font-family: 'Roboto', sans-serif;
+}
+.w1 p{
+
+    padding: 20px;
+    height: 300px;
+}
+#gear{
+    color: #C0C0C0;
+}
+#bulb{
+    color: rgba(219, 219, 6, 0.795);
+}
+#hand{
+    color: green;
+}
+.excellence{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: antiquewhite;
+
+}
+.evector img{
+    width: 250px;
+    height: 250px;
+}
+.w12{
+    /* background-color: red; */
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.w12 h3{
+    font-family: 'Roboto', sans-serif;
+}
+.w12 p{
+
+    padding: 20px;
+    height: 300px;
+}
+#Values{
+    background-color: #40E15D;
+    padding: 20px;
+}
+.start{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    height: 700px;
+    background-image: url(../about/bg\ about2.jpg);
+    background-size: cover;
+    color: white;
+    
+}
+.start h1{
+    font-family: 'Roboto', sans-serif;
+}
+.start p{
+    width: 600px;
+    padding: 20px;
+}
+.btn4 button{
+    width: 200px;
+    height: 60px;
+border: none;
+cursor: pointer;
+color: white;
+background-color: #40E15D;
+border-radius: 8px;
+}
+@media screen and (max-width:688px) {
+    .mission{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mvideo{
+        width: auto;
+     height: 300px;
+    }
+    .mtext{
+        width: auto;
+    }
+    .start p{
+width: auto;
+    }
+}
+@media only screen and (max-width:346px) {
+    .w1{
+        width: auto;
+    }
+    .w12{
+        width: auto;
+    }
+}

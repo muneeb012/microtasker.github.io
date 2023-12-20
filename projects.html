@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroTasker</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/portfolio.css">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/97e9dcf34a.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112568905060703");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="index.js"></script>
+    <!-- Responsive menu -->
+    <div id="navm" class="rnav">
+        <!-- head of responsive menu -->
+        <div class="rhead">
+            <div class="title">
+                <h4>Menu</h4>
+            </div>
+            <div class="close">
+                <h4 onclick="closer()"><i class="fa-solid fa-xmark"></i></h4>
+            </div>
+        </div>
+        <!-- main of responsive menu -->
+        <div class="rmenu">
+            <ul>
+                <li>
+                    <div class="home">
+                        <p><a href="index.html">Home</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="home">
+                        <p><a href="services.html">Services</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="home">
+                        <p><a href="about.html">About</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="home">
+                        <p><a href="contact.html">Contact</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="home">
+                        <p><a href="">Projects</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <header id="ph">
+        <nav>
+            <!-- logo -->
+            <div class="logo">
+                <img src="imgs/logodrk.png" alt="">
+            </div>
+            <!-- menu oprn button for mobile -->
+            <div class="rtoogle">
+                <h4 style="color: black;" onclick="mobile()"><i class="fa-solid fa-bars"></i></h4>
+            </div>
+            <!-- menu for pc and big devices -->
+            <div class="menu">
+                <ul>
+                    <li><a style="color: black;" href="index.html">Home</a></li>
+                    <li><a style="color: black;" href="services.html">Services</a></li>
+                    <li><a style="color: black;" href="about.html">About</a></li>
+                    <li><a style="color: black;" href="contact.html">Contact</a></li>
+                    <li><a style="color: black;" href="">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- tagline of heador -->
+
+    </header>
+    <main>
+        <!--navigator -->
+        <div class="navigator">
+            <ul>
+                <li style="color:#40E15D ;" id="c1" onclick="web()">Web-Design</li>
+                <li id="c2" onclick="video()">Video-Editing</li>
+                <li id="c3" onclick="graphic()" >Graphic-Design</li>
+                <li id="c4" onclick="white()">White-Board-Animation</li>
+            </ul>
+        </div>
+        <div class="object">
+        <!-- Web design -->
+        <div  class="webportfoilio" id="web">
+            <ul>
+                <li>
+                    <div class="card">
+                        <!-- Left side (image) -->
+                        <img src="projects/Pet.png" alt="Card Image">
+
+                        <!-- Right side (buttons) -->
+                        <div class="card-buttons">
+                            <a target="_blank" href="https://muneeb012.github.io/Pets.github.io/"><button
+                                    class="card-button">Visit-Site</button></a>
+                            <a target="_blank" href=""><button class="card-button">Read Blog</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <!-- Left side (image) -->
+                        <img src="projects/Fast-Food.png" alt="Card Image">
+
+                        <!-- Right side (buttons) -->
+                        <div class="card-buttons">
+                            <a href=""><button class="card-button">Visit-Site</button></a>
+                            <a href=""><button class="card-button">Read Blog</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <!-- Left side (image) -->
+                        <img src="projects/Gym.png" alt="Card Image">
+
+                        <!-- Right side (buttons) -->
+                        <div class="card-buttons">
+                            <a href=""><button class="card-button">Visit-Site</button></a>
+                            <a href=""><button class="card-button">Read Blog</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <!-- Left side (image) -->
+                        <img src="projects/Travel.png" alt="Card Image">
+
+                        <!-- Right side (buttons) -->
+                        <div class="card-buttons">
+                            <a href=""><button class="card-button">Visit-Site</button></a>
+                            <a href=""><button class="card-button">Read Blog</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <!-- Left side (image) -->
+                        <img src="projects/Real-Estate.png" alt="Card Image">
+
+                        <!-- Right side (buttons) -->
+                        <div class="card-buttons">
+                            <a href=""><button class="card-button">Visit-Site</button></a>
+                            <a href=""><button class="card-button">Read Blog</button></a>
+                        </div>
+                    </div>
+                </li>
+           
+
+            </ul>
+        </div>
+        <!-- video Editing -->
+        <div id="videos" class="video">
+            <ul>
+                <li>
+                    <iframe src="https://www.youtube.com/embed"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5y1RpNtlgzU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                  <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ed8Y4ubsPcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </li>
+                   <li>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/l9uR8pgQlU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/U6PiMDKVZnE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/gn-HnTOHqig"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/x7psXbRpjyA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/DWl_CvYr7U8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/WH9rODPqNns" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/wXtxSb0QXg8"
+                        title="YouTube video player" frameborder="1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/__mxBK2Zw7k"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/4qnqWWXUFvo"
+                        title="YouTube video player" frameborder="1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/8BdbqABBnpE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe></li>
+            </ul>
+        </div>
+        <!-- gragic -->
+        <div id="graphic" class="grahics">
+            <ul>
+                <li><a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/53033430023/in/dateposted-public/"
+                        title="Sassy wears"><img src="https://live.staticflickr.com/65535/53033430023_23ca9d7cd8_w.jpg"
+                            width="320" height="320" alt="Sassy wears" /></a>
+                  <li> <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></li>
+                </li>
+                <a data-flickr-embed="true"
+                    href="https://www.flickr.com/photos/197418264@N05/53033106649/in/dateposted-public/"
+                    title="King Favour"><img src="https://live.staticflickr.com/65535/53033106649_30c7eea55f_w.jpg"
+                        width="320" height="320" alt="King Favour" /></a>
+                <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                
+                <li><a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/53032344287/in/dateposted-public/"
+                        title="Stopby"><img src="https://live.staticflickr.com/65535/53032344287_7cc7d67902_w.jpg"
+                            width="320" height="320" alt="Stopby" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li>
+                <li><a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/53033106574/in/dateposted-public/"
+                        title="Stopby Dark"><img src="https://live.staticflickr.com/65535/53033106574_f6f108a116_w.jpg"
+                            width="320" height="320" alt="Stopby Dark" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li>
+                <li><a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/53032344322/in/dateposted-public/"
+                        title="Acadmey Brand"><img
+                            src="https://live.staticflickr.com/65535/53032344322_6738a27064_w.jpg" width="320"
+                            height="320" alt="Acadmey Brand" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li>
+                <li><a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/53032924776/in/dateposted-public/"
+                        title="Queen Bassey Club Logo"><img
+                            src="https://live.staticflickr.com/65535/53032924776_508201dc3a_w.jpg" width="320"
+                            height="320" alt="Queen Bassey Club Logo" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li>
+                <li>
+                    <a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/53033404563/in/dateposted-public/"
+                        title="Atleta Fitness"><img
+                            src="https://live.staticflickr.com/65535/53033404563_f4214cb898_w.jpg" width="320"
+                            height="320" alt="Atleta Fitness" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li>
+                <li><a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/53033106614/in/dateposted-public/"
+                        title="Gist Yentown"><img src="https://live.staticflickr.com/65535/53033106614_8a8b8169c0_w.jpg"
+                            width="320" height="320" alt="Gist Yentown" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li>
+                <li><a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/53033347420/in/dateposted-public/"
+                        title="Dxx logo"><img src="https://live.staticflickr.com/65535/53033347420_68ae8b3c64_n.jpg"
+                            width="320" height="320" alt="Dxx logo" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li>
+                <br>
+                <hr>
+                <li>
+                    <a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/52976531298/in/dateposted-public/"
+                        title="Bussiness Card"><img
+                            src="https://live.staticflickr.com/65535/52976531298_6578fa4c38_w.jpg" width="367"
+                            height="420" alt="Bussiness Card" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li> 
+                <li>
+                    <a data-flickr-embed="true"
+                        href="https://www.flickr.com/photos/197418264@N05/52975490352/in/dateposted-public/"
+                        title="FB Cover and web banner"><img
+                            src="https://live.staticflickr.com/65535/52975490352_6cc9979a50_w.jpg" width="367"
+                            height="420" alt="FB Cover and web banner" /></a>
+                    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </li> 
+            </ul>
+        </div>
+        <!-- whiteboard -->
+        <div id="white" class="whiteboard">
+            <ul>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YW0LY5MlvLo" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </li>
+            </ul>
+        </div>
+        </div>
+</body>
+
+</html>
+
+
+</div>
+</main>
+<footer>
+    <div class="fsocial">
+        <div class="tx7">
+            <h4>Get connected with us on social network</h4>
+        </div>
+        <div class="sociallinks">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="fhead">
+        <div class="fmain">
+            <div class="name">
+                <div class="logo">
+                    <img src="imgs/logo.png" alt="">
+                </div>
+                <p>Our platform connects task seekers with a network of skilled microtaskers, enabling you to
+                    effortlessly accomplish tasks that fit your schedule and budget. From data entry and content
+                    creation to virtual assistance and more, our diverse range of microtasks offers something for
+                    everyone.
+                </p>
+            </div>
+            <div class="links">
+                <h3>Usefull links</h3>
+                <ul>
+                    <li><a href="">Terms&condtions</a></li>
+                    <li><a href="">How to Order</a></li>
+                    <li><a href="">OurBlog</a></li>
+                    <li><a href="">Get us on other market places</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i> info@gmail.com</a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"> </i> +923234673347</a></li>
+                    <li><a href=""><i class="fa-solid fa-phone"></i> +923234673347</a></li>
+                    <li><a href=""><i class="fa-brands fa-telegram"></i> @microtasker</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy;Copyright Microtasker 2023</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
