@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-Devolpment</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="formcss/form.css">
     <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/97e9dcf34a.js" crossorigin="anonymous"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5KD0G75F9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5KD0G75F9');
+</script>
 <body>
   <!-- Messenger Chat plugin Code -->
   <div id="fb-root"></div>
@@ -433,11 +441,11 @@
                <div class="Duration">
                  <label for="budget">How many pages you need*</label>
                  <br>
-                   <input placeholder=" minimum 30" type="number" min="30"  max="28800" name="duration" required>
+                   <input  placeholder=" minimum 1" type="number" min="1"  max="20" name="Pages" required>
           
                </div>
                <div id="durationerror" class="error">
-                <p>Please enter a valid duration!</p>
+                <p>Please Tell us how many pages you need minimum 1!</p>
                </div>
                <br>
                <div class="Sample">
@@ -448,12 +456,11 @@
               
            
               <div class="next">
-              <button onclick="test2()">Next</button>
+              <button onclick="webtype()">Next</button>
               </div>
           </div>
-         
          <!-- form3 -->
-         <div id="step3" class="f3">
+      <div id="step3" class="f3">
           <div id="step1" class="f1">
            <div class="ftx">
              <h2>About Project</h2>
@@ -468,7 +475,9 @@
             <div class="next">
             <button type="submit" >Next</button>
             </div>
+      </div>
           </form>
+
           <script>
             var form = document.getElementById("my-form");
             
@@ -500,6 +509,9 @@
               });
             }
             form.addEventListener("submit", handleSubmit)
+           
+         
         </script>
+    </main>
 </body>
 </html>

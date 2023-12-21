@@ -7,18 +7,13 @@ body{
     background-color: #3598DC;
 }
 main{
-    /* position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-height: 100vh;
-margin-left: auto;
-margin-right: auto;
-padding: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto; /* This centers horizontally */
+    padding: 20px;
+
 
 }
 .logo{
@@ -220,8 +215,6 @@ textarea:focus{
       .name_email input{
         width: 280px;
       }
-      main{
-        margin-top: 80px;
-      }
+    
 
 }

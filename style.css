@@ -777,4 +777,9 @@ width: 100%;
     .colege img {
         width: 300px;
     }
+    .section2{
+        background-image: url(imgs/bg-m.jpg);
+        background-size: cover;
+      
+    }
 }
