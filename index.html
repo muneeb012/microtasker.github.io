@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5KD0G75F9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5KD0G75F9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-R5KD0G75F9');
-</script>
+        gtag('config', 'G-R5KD0G75F9');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroTasker</title>
@@ -29,12 +28,13 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5KD0G75F9"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-R5KD0G75F9');
+    gtag('config', 'G-R5KD0G75F9');
 </script>
+
 <body>
     <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
@@ -44,95 +44,99 @@
     </div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "112568905060703");
-      chatbox.setAttribute("attribution", "biz_inbox");
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "112568905060703");
+        chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!-- Your SDK code -->
     <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v18.0'
-        });
-      };
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v18.0'
+            });
+        };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
     <div id="loading" class="loader">
         <img width="300px" src="imgs/00.gif" alt="">
-    
+
     </div>
 
     <style>
         .loader {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  width: 100%;
-}
-.crdit{
-    font-family: sans-serif;
-   
-}
-/* Add styles to hide the content initially */
-.hidden {
-    display: none;
-}
-.unavailble{
-        width: 300px;
-        background-color: white;
- border-radius: 30px;
-        padding: 40px;
-        text-align: center;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        font-family: 'Roboto', sans-serif;
-        z-index: 1;
-        display: none;
-        
-    }
-    .okay button{
-        width: 80px;
-        padding: 10px;
-        background-color: yellow;
-        cursor: pointer;
-        border: none;
-        font-family: 'Roboto', sans-serif;
-    }
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+
+        .crdit {
+            font-family: sans-serif;
+
+        }
+
+        /* Add styles to hide the content initially */
+        .hidden {
+            display: none;
+        }
+
+        .unavailble {
+            width: 300px;
+            background-color: white;
+            border-radius: 30px;
+            padding: 40px;
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            font-family: 'Roboto', sans-serif;
+            z-index: 1;
+            display: none;
+
+        }
+
+        .okay button {
+            width: 80px;
+            padding: 10px;
+            background-color: yellow;
+            cursor: pointer;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+        }
     </style>
     <script src="index.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-  // Simulate a delay (you can replace this with your actual loading logic)
-  setTimeout(function() {
-      // Hide the loader
-      document.getElementById("loading").style.display = "none";
-      // Show the content
-      document.getElementById("content").style.display = "block";
-  }, 5000); // Adjust the delay as needed
-});
+        document.addEventListener("DOMContentLoaded", function () {
+            // Simulate a delay (you can replace this with your actual loading logic)
+            setTimeout(function () {
+                // Hide the loader
+                document.getElementById("loading").style.display = "none";
+                // Show the content
+                document.getElementById("content").style.display = "block";
+            }, 5000); // Adjust the delay as needed
+        });
 
 
-// sorry
-function sorry(){
-  document.getElementById('sorry').style.display="block"
-}
-function sorryc(){
-  document.getElementById('sorry').style.display="none"
-}
+        // sorry
+        function sorry() {
+            document.getElementById('sorry').style.display = "block"
+        }
+        function sorryc() {
+            document.getElementById('sorry').style.display = "none"
+        }
 
 
 
@@ -143,7 +147,7 @@ function sorryc(){
         <!-- currentley unavilable -->
         <div id="sorry" class="unavailble">
             <div class="vector">
-       <img width="250px" src="imgs/sorry.png" alt="">
+                <img width="250px" src="imgs/sorry.png" alt="">
             </div>
             <h4>Sorry but this system is currentley unavailable</h4>
             <br>
@@ -151,229 +155,243 @@ function sorryc(){
                 <button onclick="sorryc()">Okay</button>
             </div>
         </div>
-    <div id="navm" class="rnav">
-        <!-- head of responsive menu -->
-        <div class="rhead">
-            <div class="title">
-                <h4>Menu</h4>
+        <div id="navm" class="rnav">
+            <!-- head of responsive menu -->
+            <div class="rhead">
+                <div class="title">
+                    <h4>Menu</h4>
+                </div>
+                <div class="close">
+                    <h4 onclick="closer()"><i class="fa-solid fa-xmark"></i></h4>
+                </div>
             </div>
-            <div class="close">
-                <h4 onclick="closer()"><i class="fa-solid fa-xmark"></i></h4>
-            </div>
-        </div>
-        <!-- main of responsive menu -->
-        <div  class="rmenu">
-            <ul>
-                <li>
-                    <div class="home">
-                        <p><a href="index.html">Home</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="home">
-                        <p><a href="services.html">Services</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="home">
-                        <p><a href="about.html">About</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="home">
-                        <p><a href="contact.html">Contact</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="home">
-                        <p><a href="projects.html">Projects</a></p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <header>
-        <nav>
-            <!-- logo -->
-            <div class="logo">
-                <img src="imgs/logo.png" alt="">
-            </div>
-            <!-- menu oprn button for mobile -->
-            <div class="rtoogle">
-                <h4 onclick="mobile()"><i class="fa-solid fa-bars"></i></h4>
-            </div> 
-            
-            <!-- menu for pc and big devices -->
-            <div class="menu">
+            <!-- main of responsive menu -->
+            <div class="rmenu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li>
+                        <div class="home">
+                            <p><a href="index.html">Home</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home">
+                            <p><a href="services.html">Services</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home">
+                            <p><a href="about.html">About</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home">
+                            <p><a href="contact.html">Contact</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home">
+                            <p><a href="projects.html">Projects</a></p>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </nav>
-        <!-- tagline of heador -->
-        <div class="center">
-            <div class="ctext">
-                <h1>Your Mini-Mission <br> Marketplace</h1>
-                <br>
-                <p>Our platform connects task seekers with a network of skilled microtaskers, enabling you to
-                    effortlessly accomplish tasks that fit your schedule and budget.</p>
-                <br>
-                <div class="btns">
+        </div>
+
+        <header>
+            <nav>
+                <!-- logo -->
+                <div class="logo">
+                    <img src="imgs/logo.png" alt="">
+                </div>
+                <!-- menu oprn button for mobile -->
+                <div class="rtoogle">
+                    <h4 onclick="mobile()"><i class="fa-solid fa-bars"></i></h4>
+                </div>
+
+                <!-- menu for pc and big devices -->
+                <div class="menu">
                     <ul>
-                        <li><a href="services.html"><button id="post">Post Your Task</button></a></li>
-                        <li><button onclick="sorry()" id="freelance">Join as Tasker</button></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="cimg">
-                <img src="imgs/i12.png" alt="">
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="section1">
-            <div class="tx2">
-                <h2>Browe our Awsome <br> Projects</h2>
-                <p>"Welcome to our project showcase! We take immense pride in our diverse portfolio of innovative
-                    initiatives that span various domains. Our projects reflect our commitment to excellence,
-                    creativity, and problem-solving.</p>
-                <br>
-                <div class="btn2">
-                    <a href="projects.html"><button>
-                            Browse Now</button></a>
-                </div>
-            </div>
-            <div class="colege">
-                <img src="imgs/college.png" alt="">
-            </div>
-        </div>
-        <div class="section2">
-            <div class="tx3">
-                <h1>Get Your Dream Webiste</h1>
-                <br>
-                <p> A website establishes an online presence for your business. It serves as a virtual storefront that
-                    is accessible 24/7, allowing potential customers to find information about your products or services
-                    at any time.</p>
-                <br>
-                <a href="Forms/webform.html"><button>Get Your Website</button></a>
-            </div>
-        </div>
-        <div class="section3">
-            <div class="tx4">
-                <h1>VIDEO EDITING</h1>
-                <p>Video content is highly engaging and can effectively convey your brand message. Businesses use video
-                    editing to create promotional videos, commercials, product demos, and social media content to
-                    attract and engage their target audience. Video content is popular on social media platforms like
-                    YouTube, Instagram, Facebook, and LinkedIn. Video editing is crucial for creating eye-catching,
-                    shareable content for these platforms.</p>
-                <br>
-                <div class="btn2">
-                    <a href="Forms/videoform.html"><button></i> Get Service</button></a>
-                </div>
-            </div>
-            <div class="vector2">
-                <img src="imgs/vector2.png" alt="">
-            </div>
-        </div>
-        <div class="section4">
-
-            <div class="vector3">
-                <img src="imgs/graphic.svg" alt="">
-            </div>
-            <div class="tx4">
-                <h1>GRAPHIC DESIGN</h1>
-                <p>Graphic design is central to creating and maintaining a strong brand identity. Logos, color schemes,
-                    typography, and visual elements all contribute to how a company is perceived by its audience.
-                    Consistency in design across all materials helps establish brand recognition and trust.</p>
-                <br>
-                <div class="btn2">
-                    <a href="Forms/graphicform.html"><button> </i> Get Service</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="section5">
-            <div class="tx6">
-                <h2>OUR PAYMENT METHODS</h2>
-            </div>
-            <div class="paymentmethod">
-                <ul>
-                    <li><img src="imgs/pay11.png" alt="eayspais"></li>
-                    <li><img src="imgs/pay22.png" alt=""></li>
-                    <li><img src="imgs/Payoneer_logo.svg.png" alt=""></li>
-                </ul>
-                <div class="btn3">
-                    <a href="payment.html"><button>Learn More</button></a>
-                </div>
-            </div>
-            <div class="other" id="others">
-                <div class="select">
-                    <h2>Select</h2>
-                    <ul>
-                        <li><a href="https://bit.ly/3u0dlNi"><img src="imgs/Fiverr-Logo.png" alt=""></a></li>
-                        <li>
-                            <p>OR</p>
-                        </li>
-                        <li><a href="https://bit.ly/3GKz4Ag"><img src="imgs/upwork.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-    </main>
-    <footer>
-        <div class="fsocial">
-            <div class="tx7">
-                <h4>Get connected with us on social network</h4>
-            </div>
-            <div class="sociallinks">
-                <ul>
-                    <li><a target="_blank" href="https://bit.ly/3MyFlBX"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/muneebsadique/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://bit.ly/49Tcq4U"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                    <li><a target="_blank" href="https://bit.ly/47tuiSs"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="https://bit.ly/41mVPS5"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a target="_blank" href="https://bit.ly/40YUZM4"><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="fhead">
-            <div class="fmain">
-                <div class="name">
-                    <div class="logo">
-                        <img src="imgs/logo.png" alt="">
-                    </div>
+            </nav>
+            <!-- tagline of heador -->
+            <div class="center">
+                <div class="ctext">
+                    <h1>Your Mini-Mission <br> Marketplace</h1>
+                    <br>
                     <p>Our platform connects task seekers with a network of skilled microtaskers, enabling you to
-                        effortlessly accomplish tasks that fit your schedule and budget. 
-                    </p>
+                        effortlessly accomplish tasks that fit your schedule and budget.</p>
+                    <br>
+                    <div class="btns">
+                        <ul>
+                            <li><a href="services.html"><button id="post">Post Your Task</button></a></li>
+                            <li><button onclick="sorry()" id="freelance">Join as Tasker</button></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="links">
-                    <h3>Usefull links</h3>
+                <div class="cimg">
+                    <img src="imgs/i12.png" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="section1">
+                <div class="tx2">
+                    <h2>Browe our Awsome <br> Projects</h2>
+                    <p>"Welcome to our project showcase! We take immense pride in our diverse portfolio of innovative
+                        initiatives that span various domains. Our projects reflect our commitment to excellence,
+                        creativity, and problem-solving.</p>
+                    <br>
+                    <div class="btn2">
+                        <a href="projects.html"><button>
+                                Browse Now</button></a>
+                    </div>
+                </div>
+                <div class="colege">
+                    <img src="imgs/college.png" alt="">
+                </div>
+            </div>
+            <div class="section2">
+                <div class="tx3">
+                    <h1>Get Your Dream Webiste</h1>
+                    <br>
+                    <p> A website establishes an online presence for your business. It serves as a virtual storefront
+                        that
+                        is accessible 24/7, allowing potential customers to find information about your products or
+                        services
+                        at any time.</p>
+                    <br>
+                    <a href="Forms/webform.html"><button>Get Your Website</button></a>
+                </div>
+            </div>
+            <div class="section3">
+                <div class="tx4">
+                    <h1>VIDEO EDITING</h1>
+                    <p>Video content is highly engaging and can effectively convey your brand message. Businesses use
+                        video
+                        editing to create promotional videos, commercials, product demos, and social media content to
+                        attract and engage their target audience. Video content is popular on social media platforms
+                        like
+                        YouTube, Instagram, Facebook, and LinkedIn. Video editing is crucial for creating eye-catching,
+                        shareable content for these platforms.</p>
+                    <br>
+                    <div class="btn2">
+                        <a href="Forms/videoform.html"><button></i> Get Service</button></a>
+                    </div>
+                </div>
+                <div class="vector2">
+                    <img src="imgs/vector2.png" alt="">
+                </div>
+            </div>
+            <div class="section4">
+
+                <div class="vector3">
+                    <img src="imgs/graphic.svg" alt="">
+                </div>
+                <div class="tx4">
+                    <h1>GRAPHIC DESIGN</h1>
+                    <p>Graphic design is central to creating and maintaining a strong brand identity. Logos, color
+                        schemes,
+                        typography, and visual elements all contribute to how a company is perceived by its audience.
+                        Consistency in design across all materials helps establish brand recognition and trust.</p>
+                    <br>
+                    <div class="btn2">
+                        <a href="Forms/graphicform.html"><button> </i> Get Service</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section5">
+                <div class="tx6">
+                    <h2>OUR PAYMENT METHODS</h2>
+                </div>
+                <div class="paymentmethod">
                     <ul>
-                        <li><a href="Terms.html">Terms&condtions</a></li>
-                        <li><a href="">How to Order</a></li>
-                        <li><a target="_blank" href="https://bit.ly/3RhdHLZ">OurBlog</a></li>
-                        <li style="font-family: 'Lato', sans-serif; cursor: pointer;" onclick="fiver()">Get us on other
-                            market places</li>
+                        <li><img src="imgs/pay11.png" alt="eayspais"></li>
+                        <li><img src="imgs/pay22.png" alt=""></li>
+                        <li><img src="imgs/Payoneer_logo.svg.png" alt=""></li>
                     </ul>
+                    <div class="btn3">
+                        <a href="payment.html"><button>Learn More</button></a>
+                    </div>
                 </div>
-                <div class="contact">
-                    <h3>Contact</h3>
+                <div class="other" id="others">
+                    <div class="select">
+                        <h2>Select</h2>
+                        <ul>
+                            <li><a href="https://bit.ly/3u0dlNi"><img src="imgs/Fiverr-Logo.png" alt=""></a></li>
+                            <li>
+                                <p>OR</p>
+                            </li>
+                            <li><a href="https://bit.ly/3GKz4Ag"><img src="imgs/upwork.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <div class="fsocial">
+                <div class="tx7">
+                    <h4>Get connected with us on social network</h4>
+                </div>
+                <div class="sociallinks">
                     <ul>
-                        <li><a href=""><i class="fa-solid fa-envelope"></i> Clickme to send</a></li>
-                        <li><a href="https://bit.ly/44ynFwj"><i class="fa-brands fa-whatsapp"> </i> +923234673347</a></li>
-                        <li><a href=""><i class="fa-solid fa-phone"></i> +923234673347</a></li>
-                        <li><a href="https://t.me/muneebfreelancer"><i class="fa-brands fa-telegram"></i> @muneebfreelancer</a></li>
+                        <li><a target="_blank" href="https://bit.ly/3MyFlBX"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.instagram.com/microtasker_/e/"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://bit.ly/49Tcq4U"><i
+                                    class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a target="_blank" href="https://bit.ly/3NK0UiQ"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://bit.ly/41mVPS5"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://bit.ly/40YUZM4"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>&copy;Copyright Microtasker 2023</p>
-        </div>
-    </footer>
+            <div class="fhead">
+                <div class="fmain">
+                    <div class="name">
+                        <div class="logo">
+                            <img src="imgs/logo.png" alt="">
+                        </div>
+                        <p>Our platform connects task seekers with a network of skilled microtaskers, enabling you to
+                            effortlessly accomplish tasks that fit your schedule and budget.
+                        </p>
+                    </div>
+                    <div class="links">
+                        <h3>Usefull links</h3>
+                        <ul>
+                            <li><a href="Terms.html">Terms&condtions</a></li>
+                            <li><a href="">How to Order</a></li>
+                            <li><a target="_blank" href="https://bit.ly/3RhdHLZ">OurBlog</a></li>
+                            <li style="font-family: 'Lato', sans-serif; cursor: pointer;" onclick="fiver()">Get us on
+                                other
+                                market places</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="mailto:muhmadmuneeb13@gmail.com"><i class="fa-solid fa-envelope"></i> Click me to send</a></li>
+                            <li><a href="https://bit.ly/44ynFwj"><i class="fa-brands fa-whatsapp"> </i>
+                                    +923234673347</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone"></i> +923234673347</a></li>
+                            <li><a href="https://t.me/microtasker"><i class="fa-brands fa-telegram"></i>
+                                @microtasker</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy;Copyright Microtasker 2023</p>
+            </div>
+        </footer>
     </div>
 </body>
 
