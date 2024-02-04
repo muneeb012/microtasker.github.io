@@ -86,3 +86,25 @@ function mobile() {
     // Set a new value for the input field
     packageInput.value = 'Hello-world';
   }
+  // Logic for fotter
+  function year() {
+    // Create a new Date object
+    let currentDate = new Date();
+  
+    // Get the current year
+    let currentYear = currentDate.getFullYear();
+  
+    // Display the current year
+    console.log("The current year is: " + currentYear);
+  
+    // Update content of elements with class name "credit"
+    let elements = document.getElementsByClassName("credit");
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].innerHTML = "&copy; Copyright Microtasker " + currentYear;
+    }
+  }
+  
+  // Call the function once the document is fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    year(); // Call the function
+  });
