@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5KD0G75F9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5KD0G75F9');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Information</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112568905060703");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <h1>Payment Information</h1>
+    <div class="container">
+        <h2>Payment Methods</h2>
+        <p>We offer the following payment methods for your convenience:</p>
+
+        <ul>
+            <li><strong>EasyPaisa:</strong> You can make payments using EasyPaisa.</li>
+            <li><strong>JazzCash:</strong> JazzCash is another payment option available.</li>
+            <li><strong>Payoneer:</strong> For international payments, we accept Payoneer.</li>
+        </ul>
+
+        <h2>How to Make a Payment</h2>
+        <p>Here's how you can make a payment using our supported methods:</p>
+
+        <ol>
+            <li>Choose the payment method that suits you best.</li>
+            <li>Follow the instructions provided for that payment method.</li>
+            <li>If you encounter any issues or have questions, please <a href="contact.html">contact us</a> for assistance.</li>
+        </ol>
+
+        <h2>Payment Security</h2>
+        <p>Your payment security is important to us. We take measures to ensure that your payment information is handled securely and in compliance with industry standards.</p>
+
+        <p>If you have any concerns about the security of your payment information, please don't hesitate to reach out to us.</p>
+    </div>
+</body>
+</html>

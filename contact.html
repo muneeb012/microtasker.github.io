@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5KD0G75F9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R5KD0G75F9');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="https://kit.fontawesome.com/97e9dcf34a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/contact.css">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "112568905060703");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v18.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script src="index.js"></script>
+  <div class="main3">
+    <div class="contactimg">
+      <div style="margin-left: 20px;" class="logo">
+        <a href="index.html"><img src="imgs/logo.png" alt=""></a>
+      </div>
+    </div>
+    <div class="form">
+      <form id="forpc" action="https://formspree.io/f/xjvqrqav" method="post">
+        <div class="contitle">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="top">
+          <ul>
+            <li>
+              <div class="username">
+                <label for="name">Name</label>
+                <br>
+                <input placeholder="Name" type="text" name="name" id="name" value="">
+              </div>
+            </li>
+
+            <li>
+              <div class="mail">
+                <label for="mail">Email</label>
+                <br>
+                <input type="email" name="email" placeholder="Email">
+                <br>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="subject">
+          <label for="sunject">Subject</label>
+          <br>
+          <input required name="subject" type="text" placeholder="Subject">
+        </div>
+        <br>
+        <div class="msg">
+          <label for="msg">Message</label>
+          <br>
+          <textarea placeholder="Message" name="msg" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="submit">
+          <button onclick="contact()" type="submit">Send Message</button>
+        </div>
+      </form>
+      <div class="socials">
+        <br>
+        <h4>Or Contact With</h4>
+        <ul>
+          <li><a style="color: #02B0E9;" href="#"><i class="fa-brands fa-skype"></i></a></li>
+          <li><a target="_blank" style="color: #019DF7;"
+              href="https://www.facebook.com/profile.php?id=100089439373150"><i
+                class="fa-brands fa-facebook-messenger"></i></a></li>
+          <li><a target="_blank" style="color: #43E460;" href="https://bit.ly/44ynFwj"><i
+                class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- for mobile -->
+  <div class="mform">
+    <div class="mftitle">
+      <h4>Contact Us</h4>
+      <form id="forpc" action="https://formspree.io/f/xjvqrqav">
+        <input type="text" placeholder="Name">
+        <br>
+        <br>
+        <input type="email" placeholder="Email" name="" id="">
+        <br>
+        <br>
+        <input type="text" name="" placeholder="Message" id="">
+        <br>
+        <br>
+        <div class="submitm">
+          <button type="submit">Send Message</button>
+        </div>
+        <div class="socials">
+          <br>
+          <h4>Or Contact With</h4>
+          <ul>
+            <li><a style="color: #02B0E9;" href="#"><i class="fa-brands fa-skype"></i></a></li>
+            <li><a target="_blank" style="color: #019DF7;"
+                href="https://www.facebook.com/profile.php?id=100089439373150"><i
+                  class="fa-brands fa-facebook-messenger"></i></a></li>
+            <li><a target="_blank" style="color: #43E460;" href="https://bit.ly/44ynFwj"><i
+                  class="fa-brands fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+  <a href="index.html">
+    <div id="backs" class="back">
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+  </a>
+  <!-- script for pc -->
+  <script>
+    var form = document.getElementById("forpc");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          location.href = "index.html";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
+</body>
+
+</html>

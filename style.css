@@ -1,0 +1,785 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+ button:hover {
+    transition: 0.5s;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+/* heador */
+header {
+    background-color: #5436CA;
+    width: 100%;
+    height: 700px;
+}
+
+/* top navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo */
+.logo img {
+    width: 180px;
+}
+
+/* menu links */
+.menu ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* menu likns a */
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: serif;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Tagline */
+.center h1 {
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ctext {
+    width: 600px;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: white;
+    animation: center 1s ease 0s 1 normal forwards;
+}
+
+/* aniamtion keyframe for tagline */
+@keyframes center {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* tagline paragraph */
+.ctext p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* center tagline */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+
+}
+
+/* headorbuttons */
+.btns ul li {
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.btns button {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Lato', sans-serif;
+}
+
+/* join as freelancer */
+#freelance {
+    background-color: #5436CA;
+    color: white;
+    border: 2px solid white;
+}
+
+/* post your task */
+#post {
+    color: #5436CA;
+}
+
+/* image of man carryning laptop */
+.cimg img {
+    width: 300px;
+    position: relative;
+    top: 20px;
+}
+
+.cimg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* section2 */
+.section1 {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+
+}
+
+/* text of section1 */
+.tx2 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+/* img of second section */
+.colege img {
+    width: 600px;
+}
+
+/* grow your bussiness style */
+.tx2 {
+    width: 50%;
+    height: 300px;
+    padding-left: 20px;
+
+}
+
+/* grow your business paragraph */
+.tx2 p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* section2 */
+.btn2 button {
+    background-color: #40E15D;
+    width: 200px;
+    height: 60px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* section3 */
+.section2 {
+    background-image: url(sec3.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+
+}
+
+/* text of section2 */
+.tx3 {
+    width: 600px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+
+}
+
+.tx3 button {
+    background-color: #40E15D;
+    width: 200px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+}
+
+/* section4 */
+.vector2 img {
+    width: 600px;
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 80px; */
+    width: 100%;
+    padding-top: 40px;
+}
+
+.tx4 {
+    padding: 20px;
+    margin-top: 40px;
+    width: 600px;
+}
+
+.tx4 h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.tx4 p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* section5 */
+.section4 {
+
+    background: linear-gradient(52deg, rgba(67, 15, 97, 1) 0%, rgba(39, 11, 85, 1) 88%);
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    padding-top: 80px;
+    margin-top: 40px;
+}
+
+.vector3 img {
+    width: 550px;
+}
+
+/* secction6 */
+.paymentmethod ul li img {
+    width: 200px;
+}
+
+.paymentmethod ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.section5 {
+    text-align: center;
+    background-color: white;
+    padding-top: 40px;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.tx6 h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn3 button {
+    background-color: #40E15D;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+/* footer */
+.fsocial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6452CE;
+    width: 100%;
+}
+
+/* social icons */
+.fsocial ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* social links */
+.fsocial ul li a {
+    color: white;
+}
+
+/* main sectio of footer */
+.fmain {
+    background-color: #1D2331;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px;
+}
+
+/* head of footer */
+.fhead {
+    background-color: #5436CA;
+    display: flex;
+    justify-content: center;
+}
+/* fmain contenr */
+.fmain ul li {
+    display: inline-block;
+    margin: 45px;
+}
+/* logo and description */
+.name {
+    width: 400px;
+}
+/* paragraph of logo */
+.name p {
+    font-family: 'Lato', sans-serif;
+}
+/* usefull links */
+.links h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.links ul li {
+    display: block;
+    margin: 10px;
+}
+
+.links ul li a {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+/* contacts */
+.contact ul li {
+    display: block;
+    margin: 15px;
+}
+
+.contact ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.tx7 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 10px;
+}
+/* footer margin */
+footer {
+    margin-top: 80px;
+}
+/* copyright */
+.copyright {
+    color: white;
+    text-align: center;
+    background-color: #141B29;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+/* footer head */
+.fhead {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+/* responsive menu */
+.rtoogle h4 {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/* responsivr menu main */
+.rnav {
+    background-color: black;
+    width: 100%;
+    color: white;
+    height: 40vh;
+    display: none;
+    flex-direction: column;
+    animation: nav 1s ease 0s 1 normal forwards;
+    position: fixed;
+    z-index: 1;
+
+}
+/* aniamtion for openinin menu */
+@keyframes nav {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* responsive menu links */
+.rmenu ul li {
+    display: block;
+    margin: 20px;
+}
+
+.rmenu {
+    background-color: #000000;
+    text-align: center;
+}
+
+.rmenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.rmenu ul li a:hover {
+    color: red;
+    transition: 0.5s;
+}
+/* heador of rmenu */
+.rhead {
+    background-color: #1B1B1B;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* close button */
+.close:hover {
+    cursor: pointer;
+    color: red;
+    transition: 0.5s;
+}
+/* Servic page Css */
+#sheader{
+    background-color: #000000;
+    height: 60px;
+    padding: 0;
+}
+#backs{
+    color: black;
+}
+/* borwse projects */
+.s7{
+    display: flex;
+
+}
+.protext h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+.side1{
+    background-color: yellow;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.side2{
+width: 50%;
+}
+.pbutton{
+    margin-top: 10px;
+  
+}
+.pbutton button{
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: #40E15D;
+    color: white;
+}
+.pimg img{
+height: 100vh;
+width: 100%;
+}
+/* media query */
+/* media one */
+.other a img{
+    width: 80px;
+    padding-top: 10px;
+}
+.select ul li{
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+
+.select p{
+
+   position: relative;
+   bottom: 30px;
+}
+.other{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 999; /* Ensure it's above other content */
+    display: none;
+    animation: fiver 2s ease 0s 1 normal forwards;
+}
+@keyframes fiver {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+.select{
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: #fff; /* Background color of the content */
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000; /* Place content above overlay */
+        border-radius: 30px;
+        
+    }
+    .select h2{
+        font-family: 'Roboto', sans-serif;
+    }
+    /* Style the content inside the overlay as needed */
+ 
+    
+    /* unavailable */
+    .unavailble{
+        width: 300px;
+        background-color: white;
+ border-radius: 30px;
+        padding: 40px;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        font-family: 'Roboto', sans-serif;
+        z-index: 1;
+        display: none;
+        
+    }
+    .okay button{
+        width: 80px;
+        padding: 10px;
+        background-color: yellow;
+        cursor: pointer;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+    }
+/* Add styles for the loader */
+
+
+ 
+@media screen and (max-width:883px) {
+
+    /* heador */
+    .center h1 {
+        font-size: 40px;
+
+    }
+
+    .fmain {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        column-gap: normal;
+    }
+
+    .links {
+        margin-top: 40px;
+    }
+
+    .contact {
+        margin-top: 40px;
+    }
+
+    .fhead {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .colege img {
+        width: 400px;
+    }
+
+    .colege {
+        margin-top: 130px;
+    }
+
+    footer {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .vector3 img {
+        width: 300px;
+    }
+
+    .vector2 img {
+        width: 300px;
+    }
+
+    .tx4 {
+        width: 450px;
+    }
+}
+/* media 2 */
+@media only screen and (max-width:699px) {
+    .fsocial {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .cimg {
+        display: none;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .ctext {
+        width: 450px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .rtoogle h4 {
+        display: inline;
+    }
+
+    .tx3 {
+        width: 300px;
+    }
+
+    .tx3 p {
+        font-size: 15px;
+    }
+
+    .tx4 {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .name {
+        width: 300px;
+    }
+
+    body {
+        overflow: auto;
+    }
+}
+/* media last */
+@media only screen and (max-width:471px) {
+    .center h1 {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+
+    .center p {
+        font-size: 15px;
+        margin-right: 20px;
+
+
+    }
+
+    .center {
+        margin-right: 20px;
+    }
+
+    .btns button {
+        width: 150px;
+    }
+
+    .colege img {
+        width: 300px;
+    }
+    .section2{
+        background-image: url(imgs/bg-m.jpg);
+        background-size: cover;
+      
+    }
+}

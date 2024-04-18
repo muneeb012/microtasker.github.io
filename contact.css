@@ -1,0 +1,178 @@
+#chead{
+    height: 80px;
+}
+.contactimg {
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczNso8H2rOmDAMRNgyDmMa2BsED-CRPFvEpxtHIhEhpEkkeSIDwDQO3bW2nuaUsy7FT-9PiTA-rgrvNLbp3oZ3-eScd1Hyf5sswS6DQzNxTyrAK1MvFa9_Fqos0OBtrCZDcTInqezSSaAYtUbCt4Bgw0VMZrrJsEDUhLB2wA9uFigZR6an-49h52705sG_EJ6QX0_gpbrZFhpaARax_CR6VuZtgpRO53zksrQsx0di4mzFWvplvWl0Ejhb6gH0G-JP0TqEEprqJcXV94J3sr8ZCFBmRxuXGbaAaDhkS4vs4oCKuvUwIxzvQS7JRJbueFqRDxt9Yn7pOEgknRQJJTvp_NxHEAMzNzEzKaij_qVkjXs6Jv891MdABfRq0uVXrnCa3sOHfbgjwANoriX0lyv9-EegTyZSp2qkzku65Yx_QqDX1AW2teRsi69Pkh63B1fn9quxHjv5RFYR3i5-rNtAd5e5PTr3NuZ7JnU3W892sBl21Q1_faGYs7ks14OPqpsFib-B-UnKQv7_C0z2klFgrS_xTdTXP3aQRDgIxfjf1UTyf4lNkWECiCBk6pi_UdwfcedMADfR8vjF0EJsOrlsA6DYKHjNhYGqT167ziON6WkYcDDkwxV8JIQ8U0JE56IXraGUw6-N8K5YBBxCItD2T8ztUPkijeVmS9-1DhE8p-seiEHkg71RCUyzoTmssJSG-fUwpNd__KYy6TtMkbT3KH3DTZhDcG3gwPj4X_mp9G9cqfyTjiZhC--9xUBv9upHKcCRnxE4GIc6zdyJvxtq9PwF0oJnI4RMf1RvgBXLZ2mKabf6_D3UUEOQPycbnyfAcseFGiIwZq6648Hl9EgIg2VXveJYWJ3GDNIbfN3QHlVWRMTMuX0jXk0FyPSCrHuDyAPIaqP3m1Iphdz27zjUY1Xg=w1126-h923-s-no-gm?authuser=0);
+  width: 50%;
+
+  background-size: cover;
+}
+body{
+    overflow: hidden;
+    background-color: #3053B3;
+}
+.main3{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  
+}
+.back{
+    position: fixed;
+    bottom: 0px;
+    left: 0px; 
+    bottom: 10px;
+    padding: 20px;
+    background-color: yellow;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+animation: back 5s ease 0s 1 normal forwards;
+}
+@keyframes back {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.form{
+  background-color:#E9EDF0;
+    width: 50%;
+ padding: 20px;
+
+}
+
+.top ul li{
+ display: inline-block;
+ margin: 20px;
+}
+.top input:focus{
+    border: none;
+    outline: none;
+}
+.subject input{
+    width: 465px;
+}
+.subject input:focus{
+    outline: none;
+}
+.subject{
+    margin-left: 20px;
+}
+
+#forpc input{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+}
+#forpx input:focus{
+    border: none;
+    outline: none;
+}
+#forpc textarea{
+    border: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 480px;
+    font-family: 'Lato', sans-serif;
+}
+#forpc textarea:focus{
+    outline: none;
+    
+}
+.msg{
+    margin-left: 20px;
+}
+.submit{
+    margin-left: 23px;
+    margin-top: 10px;
+}
+.submit button{
+    background-color: #3053B3;
+    color: white;
+    height: 60px;
+    width: 200px;
+    border:none;
+    cursor: pointer;
+}
+label{
+    font-family: 'Roboto', sans-serif;
+}
+.contitle{
+    font-family: 'Roboto', sans-serif;
+    /* width: 100%; */
+   margin-left: 20px;
+   padding: 10px;
+}
+.socials{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.socials ul li{
+    display: inline-block;
+    margin: 20px;
+    font-size: 40px;
+}
+/* mobile form */
+.mform{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+    border-radius: 30px;
+    display: none;
+}
+#rform input{
+ width: 290px;
+height: 40px;
+border: none;
+border-bottom: 1px solid red;
+
+}
+#rform{
+    padding-top: 20px;
+}
+#rform input:focus{
+   outline: none;
+   }
+   .submitm button{
+width: 290px;
+height: 40px;
+border-radius: 30px;
+border: none;
+color: white;
+cursor: pointer;
+background-color: #FF3D8B;
+   }
+   .submitm{
+    margin-top: 20px;
+   }
+   .mftitle{
+    font-family: 'Roboto', sans-serif;
+}
+   
+@media screen and (max-width:1090px) {
+    .main3{
+        display: none;
+    }
+    .mform{
+        display: inline;
+    }
+}

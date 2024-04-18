@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #3598DC;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto; /* This centers horizontally */
+    padding: 20px;
+
+
+}
+.logo{
+    text-align: center;
+}
+.f2{
+    background-color: white;
+    padding: 10px;
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+.f1{
+    background-color: white;
+    padding: 10px;
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+.name_email {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+input{
+    background-color: #EDF2F5;
+    font-family: 'Lato', sans-serif;
+    
+}
+select{
+    background-color: #EDF2F5;
+    font-family: 'Lato', sans-serif;
+   
+}
+form input,select{
+height: 30px;
+padding-left: 10px;
+}
+.email input {
+    width: 400px;
+   
+}
+.budget input{
+    width: 400px;
+}
+.phone input {
+    width: 400px;
+ 
+}
+.country select{
+    width: 415px;
+
+}
+.how select{
+    width: 415px;
+  
+}
+.next{
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+}
+.next button{
+    background-color: #40E15D;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 400px;
+    color: white;
+}
+.next button:hover {
+    transition: 0.5s;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+input,select{
+    border: none;
+
+}
+input,select:focus{
+    outline: none;
+}
+form{
+    padding: 10px;
+}
+label{
+    font-family: 'Lato', sans-serif;
+}
+.f2 input , select{
+    width: 400px;
+}
+.f2,.f3{
+    background-color: white;
+    padding: 20px;
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+display: none;
+animation: swap 2s 1;
+}
+@keyframes swap {
+    0%, 100% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(-1);
+    }
+    
+}
+
+.other{
+    display: none;
+}
+textarea{
+    background-color: #EDF2F5;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    width: 400px;
+    height: 200px;
+    padding-left: 10px;
+    padding: 10px;
+}
+textarea:focus{
+    outline: none;
+ 
+}
+.ftx{
+    text-align: center;
+    padding: 10px;
+}
+.ftx h2{
+    font-family: 'Roboto', sans-serif;
+}
+.ftx p{
+    font-family: 'Lato', sans-serif;
+}
+.logo{
+    text-align: center;
+
+}
+.logo img{
+    width: 200px;
+}
+/* validation */
+.error{
+    color: red;
+    font-family: 'Lato', sans-serif;
+    display: none;
+}
+.hidevalue{
+    display: none;
+}
+@media screen and (max-width:546px) {
+    .f1,.f2,.f3{
+        width: 300px;
+    }
+    .f3 textarea{
+        width: 280px;
+        overflow: hidden;
+    }
+   .title input{
+        width: 280px;
+    }
+    .Deadline input{
+        width: 280px;
+    }
+    .Duration input ,.Sample input{
+        width: 280px;
+    }
+    .email input {
+        width: 280px;
+       
+    }
+    .budget input{
+        width: 280px;
+    }
+    .phone input {
+        width: 280px;
+     
+    }
+    .country select{
+        width: 280px;
+    
+    }
+    .how select{
+        width: 280px;
+      
+    }
+    .name_email {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 400px;
+      }
+      .name_email input{
+        width: 280px;
+      }
+    
+
+}
